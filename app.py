@@ -1,6 +1,8 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
+os.environ["PORT"] = "10000"
 
 # Load saved files
 model = joblib.load("Manufacturing_Quality_prediction.pkl")
